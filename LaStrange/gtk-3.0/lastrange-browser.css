@@ -1,0 +1,28 @@
+/*	For Midori	*/
+.tab{	
+	background-color:	@bg_normal;
+	background-image:	repeating-linear-gradient(
+							  @bg_normal,
+							  @bg_normal 1px,
+							  @bg_insensitive_transparent 1px,
+							  @bg_insensitive_transparent 2px);
+	color:	@fg_normal;
+
+	border-left:	1px solid @border_interactive;
+	border-right:	1px solid @border_interactive;
+	border-top:	none;
+	border-bottom:	none;
+}
+
+.tab:checked{
+	font-size:	1.1em;
+	padding:	0.5em;
+	/*background:	@bg_selected;*/
+	background-image:	none;
+
+	color:	@fg_selected;
+
+	border-top:	3px solid @fg_selected;
+	border-left:	2px solid @border_normal;
+	border-right:	2px solid @border_normal;
+}

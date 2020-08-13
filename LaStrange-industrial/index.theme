@@ -1,0 +1,18 @@
+[X-GNOME-Metatheme]
+Name=LaStrange
+Name[de]=LaStrange industriell
+Name[en_CA]=LaStrange industrial
+Name[en_GB]=LaStrange industrial
+Name[fr]=LaStrange industriel
+Comment=Clarity and precision for a focused workflow
+Comment[de]=Klarheit und Präzision für fokussierte Arbeit
+Comment[en_CA]=Clarity and precision for a focused workflow
+Comment[en_GB]=Clarity and precision for a focused workflow
+Comment[fr]=Clarté et précision pour le travail concentré
+Type=X-GNOME-Metatheme
+Encoding=UTF-8
+GtkTheme=LaStrange
+MetacityTheme=LaStrange
+IconTheme=Vertex-Maia
+CursorTheme=Adwaita
+CursorSize=16

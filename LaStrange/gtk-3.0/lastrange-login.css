@@ -1,0 +1,18 @@
+#panel_window,
+#panel_window #menubar,
+#login_window,
+#restart_dialog,
+#shutdown_dialog,
+#login_notebook {
+	background-color: alpha(@bg_normal,0.75);
+	color:  @fg_normal;
+	text-decoration:	none;
+}
+
+#panel_window,
+#login_window{
+	background-color: alpha(@bg_normal,0.75);
+	border-radius: 0px;
+	border: 1px solid @border_normal;
+	border-top: 3px @bg_titlebutton;
+}

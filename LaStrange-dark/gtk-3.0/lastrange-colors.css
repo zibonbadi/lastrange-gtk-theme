@@ -1,0 +1,43 @@
+@define-color bg_normal #222;
+@define-color bg_normal_transparent rgba(16, 16, 16, 0.5);
+@define-color bg_button rgba(16, 16, 16, 0.75);
+@define-color bg_titlebar_accent #5FBAAE;
+@define-color bg_titlebutton #222;
+@define-color bg_titlebar_backdrop #222;
+@define-color bg_active #D9D9D9;
+@define-color bg_selected #22AA99;
+@define-color bg_selected_transparent rgba(0x22, 0xAA, 0x99, 0.25);
+@define-color bg_prelight rgba(0x22, 0xAA, 0x99, 0.75);
+@define-color bg_insensitive #D9D9D9;
+@define-color bg_insensitive_transparent rgba(0xD9, 0xD9, 0xD9, 0.3);
+@define-color bg_overshoot rgba(0x22, 0xAA, 0x99, 0.5);
+
+@define-color fg_normal #D9D9D9;
+@define-color fg_button #D9D9D9;
+@define-color fg_titlebutton #D9D9D9;
+@define-color fg_titlebar_backdrop #22AA99;
+@define-color fg_active #22AA99;
+@define-color fg_selected #D9D9D9;
+@define-color fg_prelight #222;
+@define-color fg_insensitive #222;
+
+@define-color border_normal #777;
+@define-color border_highlight #2246aa;
+@define-color border_interactive #22AA99;
+@define-color border_destructive #aa2222;
+
+@define-color button_close	#cc3333;
+@define-color button_minimize	#cca700;
+@define-color button_maximize	#9a19a6;
+@define-color button_menu	#179917;
+
+@define-color notify_bg	#D9D9D9;
+@define-color notify_fg	#222;
+@define-color notify_border	#222;
+@define-color notify_button_bg	#D9D9D9;
+@define-color notify_button_fg	#222;
+@define-color notify_button_border	#22AA99;
+@define-color notify_progress	#22AA99;
+
+@define-color shadow_titlebar rgba(0x22,0xaa,0x99,0.7);
+@define-color shadow_popover rgba(0x22,0xaa,0x99,0.7);
