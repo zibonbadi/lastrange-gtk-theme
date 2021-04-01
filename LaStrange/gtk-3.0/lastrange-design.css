@@ -159,7 +159,16 @@ radio:hover{
 	border-color: @fg_prelight;
 }
 
-switch		{	background-color:	@bg_insensitive;	}
+switch, switch:hover	{
+	background-color: @bg_normal;
+	border: 1pt solid @border_interactive;
+}
+
+switch:checked		{
+	background-color:	@bg_insensitive;
+	color:	@fg_insensitive;
+}
+
 scale contents *, scale contents:hover{
 	min-width:		10px;
 	min-height:		10px;
@@ -174,10 +183,9 @@ scale marks indicator, scale, contents:hover{
 
 
 switch slider	{
-	background-color:	@fg_insensitive;
+	background-color:	@bg_normal;
 	border-radius: 0px;
 }
-switch slider:checked{	background-color:	@bg_normal;	}
 
 
 scale{	margin: 1.5ex; }
@@ -234,7 +242,7 @@ headerbar, headerbar:hover, .titlebar, titlebar:hover{
 }
 headerbar:not(:backdrop){ box-shadow: 0px 0.5ex 3px @shadow_titlebar; }
 
-window > decoration{ border: 1.5pt solid @bg_titlebar_accent; }
+window > decoration{ border: 0.35ex solid @bg_titlebar_accent; }
 
 label.title{	
 	font-size:	12px;

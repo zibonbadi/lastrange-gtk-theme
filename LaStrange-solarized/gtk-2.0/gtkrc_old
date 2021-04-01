@@ -20,29 +20,29 @@ style "default"
     xthickness = 2
     ythickness = 2
 
-    fg[ACTIVE]        = "#000000"
-    fg[INSENSITIVE]   = "#717170"
-    fg[NORMAL]        = "#000000"
-    fg[PRELIGHT]      = "#000000"
-    fg[SELECTED]      = "#ffffff"
+    fg[ACTIVE]        = "#2aa198"
+    fg[INSENSITIVE]   = "#93a1a1"
+    fg[NORMAL]        = "#839496"
+    fg[PRELIGHT]      = "#839496"
+    fg[SELECTED]      = "#fdf6e3"
 
-    bg[ACTIVE]        = "#cdcdc9"
-    bg[INSENSITIVE]   = "#e4e4e0"
-    bg[NORMAL]        = "#e4e4e0"
-    bg[PRELIGHT]      = "#ccc9c5"
-    bg[SELECTED]      = "#3f993f"
+    bg[ACTIVE]        = "#eee8d5"
+    bg[INSENSITIVE]   = "#2aa198"
+    bg[NORMAL]        = "#fdf6e3"
+    bg[PRELIGHT]      = "#eee8d5"
+    bg[SELECTED]      = "#2aa198"
 
-    base[ACTIVE]      = "#e5e5e5"
-    base[INSENSITIVE] = "#e4e4e0"
-    base[NORMAL]      = "#ffffff"
-    base[PRELIGHT]    = "#ccc9c5"
-    base[SELECTED]    = "#ccc9c5"
+    base[ACTIVE]      = "#eee8d5"
+    base[INSENSITIVE] = "#2aa198"
+    base[NORMAL]      = "#fdf6e3"
+    base[PRELIGHT]    = "#eee8d5"
+    base[SELECTED]    = "#2aa198"
 
-    text[ACTIVE]      = "#000000"
-    text[INSENSITIVE] = "#000000"
-    text[NORMAL]      = "#000000"
-    text[PRELIGHT]    = "#000000"
-    text[SELECTED]    = "#000000"
+    text[ACTIVE]      = "#2aa198"
+    text[INSENSITIVE] = "#93a1a1"
+    text[NORMAL]      = "#839496"
+    text[PRELIGHT]    = "#839496"
+    text[SELECTED]    = "#fdf6e3"
 
     engine "xfce"
     {
@@ -67,8 +67,8 @@ class "*MenuItem*"        style "thin"
 # 
 style "rox" = "default"
 {
-  bg[NORMAL] = "#ffffff"
-  bg[ACTIVE] = "#ffffff"
+  bg[NORMAL] = "#363d40"
+  bg[ACTIVE] = "#21272a"
 }
 widget_class "*Collection" style "rox"
 
@@ -77,10 +77,10 @@ widget_class "*Collection" style "rox"
 # 
 style "titlebar" = "default"
 {
-    bg[SELECTED]      = "#3f993f"
-    fg[SELECTED]      = "#ffffff"
-    bg[INSENSITIVE]   = "#cdcdc9"
-    fg[INSENSITIVE]   = "#000000"
+    bg[SELECTED]      = "#2aa198"
+    fg[SELECTED]      = "#839496"
+    bg[INSENSITIVE]   = "#fdf6e3"
+    fg[INSENSITIVE]   = "#839496"
 }
 
 widget "xfwm"	          style "titlebar"

@@ -21,7 +21,7 @@
 @define-color fg_prelight #839496;
 @define-color fg_insensitive #586e75;
 
-@define-color border_normal #839496;
+@define-color border_normal #073642;
 @define-color border_highlight #6c71c4;
 @define-color border_interactive #2aa198;
 @define-color border_destructive rgb(200, 50, 47);
@@ -41,3 +41,8 @@
 
 @define-color shadow_titlebar rgba(0x2a,0xa1,0x98,0.7);
 @define-color shadow_popover rgba(0xcb,0x4b,0x16,0.7);
+
+@import url('lastrange-design.css');
+@import url('lastrange-xfce.css');
+@import url('lastrange-browser.css');
+@import url('lastrange-login.css');
