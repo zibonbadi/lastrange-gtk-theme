@@ -1,13 +1,15 @@
 [X-GNOME-Metatheme]
-Name=LaStrange
+Name=LaStrange Solarized
 Name[de]=LaStrange Solarized
 Name[en_CA]=LaStrange Solarized
 Name[en_GB]=LaStrange Solarized
+Name[fr]=LaStrange Solarizado
 Name[fr]=LaStrange Solarized
 Comment=Clarity and precision for a focused workflow
 Comment[de]=Klarheit und Präzision für fokussierte Arbeit
 Comment[en_CA]=Clarity and precision for a focused workflow
 Comment[en_GB]=Clarity and precision for a focused workflow
+Comment[es]=Claridad y precisión para un flujo de trabajo enfocado 
 Comment[fr]=Clarté et précision pour le travail concentré
 Type=X-GNOME-Metatheme
 Encoding=UTF-8
