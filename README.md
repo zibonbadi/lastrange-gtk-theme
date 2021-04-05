@@ -19,7 +19,7 @@ Thanks to [@darkshram](https://github.com/darkshram) you can find an RPM Spec fi
 
 ## Other Distributions
 
-Simply drag the `LaStrange*``directories into your themes directory. I recommend using `$HOME/.local/share/themes`, however if you want to install the theme system-wide, you may also put it in `/usr/share/themes`.
+Simply drag the `LaStrange*` directories into your themes directory. I recommend using `$HOME/.local/share/themes`, however if you want to install the theme system-wide, you may also put it in `/usr/share/themes`.
 
 # Philosophy
 
