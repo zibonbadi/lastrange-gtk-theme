@@ -2,12 +2,24 @@
 
 # LaStrange icons
 
-A clean, simple icon theme for easy and focused computing.
+A clean, simple desktop theme for easy and focused computing.
 Originally developed for [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food), the theme aims to be simple in both design and implementation while keeping a distinctly Unix-like aesthetic ...with some modern quality-of-life considerations.
 
 The name is a reference to Tom LaStrange, the inventor of [the TWM window manager](https://en.wikipedia.org/wiki/Twm), which served as the main inspiration for the desktop theme. Other influences include printed paper, [the Athena widget library](https://en.wikipedia.org/wiki/X_Athena_Widgets) and [the Amiga Workbench](https://en.wikipedia.org/wiki/Workbench_(AmigaOS))
 
+# Installation
 
+## Gentoo
+
+Simply install the package `x11-themes/lastrange-gtk-theme` from [my custom overlay repository.](https://github.com/zibonbadi/gentoo-overlay)
+
+## Fedora/RPM-based distributions
+
+Thanks to [@darkshram](https://github.com/darkshram) you can find an RPM Spec file in `contrib`. [Create a package from that.](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/ch08s02.html)
+
+## Other Distributions
+
+Simply drag the `LaStrange*``directories into your themes directory. I recommend using `$HOME/.local/share/themes`, however if you want to install the theme system-wide, you may also put it in `/usr/share/themes`.
 
 # Philosophy
 
