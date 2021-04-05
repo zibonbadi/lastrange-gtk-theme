@@ -1,6 +1,6 @@
-![LaStrange icon example]( banner.png )
+![LaStrange theme example]( banner.png )
 
-# LaStrange icons
+# LaStrange Desktop
 
 A clean, simple desktop theme for easy and focused computing.
 Originally developed for [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food), the theme aims to be simple in both design and implementation while keeping a distinctly Unix-like aesthetic ...with some modern quality-of-life considerations.
