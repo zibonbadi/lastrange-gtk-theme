@@ -1,0 +1,15 @@
+list {
+    background: @base_color;
+    color: @text_color;
+}
+
+list separator {
+    border-bottom: 1px solid @border_color;
+}
+
+.sidebar-row {
+    padding: 0.5em 1em;
+}
+.sidebar-icon {
+    margin-right: 0.5em;
+}

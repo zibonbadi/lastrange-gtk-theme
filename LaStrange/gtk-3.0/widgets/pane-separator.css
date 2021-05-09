@@ -1,0 +1,16 @@
+paned separator {
+    background-color: alpha(@focus_color, 0.15);
+    background-image: url("../assets/pane-handle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+paned.vertical > separator {
+    background-image: url("../assets/pane-handle-vertical.svg");
+}
+
+paned separator:hover {
+    background-color: alpha(@focus_color, 0.3);
+}

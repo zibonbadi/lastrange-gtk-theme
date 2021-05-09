@@ -1,0 +1,31 @@
+* {
+    -GtkScrolledWindow-scrollbar-spacing: 0;
+}
+
+scrolledwindow.frame {
+    border-width: 1pt;
+}
+
+scrollbar {
+    -GtkScrollbar-has-backward-stepper: false;
+    -GtkScrollbar-has-forward-stepper: false;
+    border: 1pt dotted alpha( @border_color, 0.5);
+}
+
+scrollbar slider {
+    background-color: mix(@bg_color, @selected_bg_color, 0.3);
+    min-width: 7pt;
+    min-height: 7pt;
+}
+
+scrollbar slider:hover {
+    background-color: mix(@bg_color, @selected_bg_color, 0.6);
+}
+
+scrollbar slider:active {
+    background-color: @selected_bg_color;
+}
+
+scrollbar through {
+    border: 0;
+}

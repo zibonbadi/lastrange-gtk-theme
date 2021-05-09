@@ -1,1 +1,29 @@
-../../LaStrange/gtk-3.0/gtk.css
+/* default color scheme */
+@define-color bg_color_secondary #d9d9d9;
+@define-color bg_color #d9d9d9;
+@define-color fg_color #222;
+@define-color base_color #d9d9d9;
+@define-color border_color #222;
+
+@define-color selected_bg_color #008777;
+@define-color selected_fg_color #d9d9d9;
+
+@define-color headerbar_focus_bg alpha(#D9D9D9, 0.25);
+@define-color headerbar_fg @text_color;
+@define-color disabled_bg alpha(@fg_color, 0.2);
+
+@define-color text_color @fg_color;
+@define-color focus_bg @selected_bg_color;
+@define-color focus_fg @bg_color;
+@define-color focus_color @selected_bg_color;
+@define-color tooltip_bg_color @base_color;
+@define-color tooltip_fg_color @text_color;
+@define-color button_bg_color @base_color;
+@define-color button_fg_color @text_color;
+
+@define-color titlebar_close	#cc3333;
+@define-color titlebar_minimize	#cca700;
+@define-color titlebar_maximize	#9a19a6;
+@define-color titlebar_menu	#179917;
+
+@import url("shared.css");

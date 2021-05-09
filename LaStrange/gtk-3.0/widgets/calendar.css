@@ -1,0 +1,20 @@
+calendar {
+    border-width: 1px;
+}
+
+calendar.header {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+calendar calendar {
+    padding: 2px;
+}
+
+calendar.highlight {
+    color: mix(@fg_color, @bg_color, 0.3);
+}
+
+calendar:indeterminate {
+    color: mix(@fg_color, @bg_color, 0.5);
+}

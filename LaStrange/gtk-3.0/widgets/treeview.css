@@ -1,0 +1,13 @@
+treeview.view:selected:focus {
+    border: 1px dotted @border_color;
+}
+
+treeview header button {
+    padding: 0.1em 0.7em;
+    border-radius: 0;
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+treeview header button:not(:last-child) {
+    border-right-width: 1px;
+}

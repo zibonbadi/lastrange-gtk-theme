@@ -1,0 +1,68 @@
+notebook,
+notebook tab:checked {
+    background: @base_color;
+    color: @text_color;
+}
+
+notebook tab,
+notebook header {
+    background: @bg_color;
+    color: mix(@fg_color, @bg_color, 0.4);
+}
+
+notebook.frame > stack {
+    border: 1pt solid @border_color;
+}
+
+notebook tab {
+    padding: 3pt 5pt;
+    border-width: 1pt;
+    border-bottom: 0;
+}
+
+notebook .top tab {
+    margin-top: 2pt;
+    margin-bottom: -1pt;
+}
+notebook .top tab:checked {
+    margin-top: 0;
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    /*
+    border-top: 2px solid @selected_bg_color;
+    */
+}
+notebook .top tab:not(:checked) {
+    border-color: @selected_bg_color;
+    color: @text_color;
+}
+
+notebook .bottom tab {
+    margin-bottom: 2pt;
+    margin-top: -1pt;
+}
+notebook .bottom tab:checked {
+    margin-bottom: 0;
+    border-bottom: 2pt solid @selected_bg_color;
+    border-top: 0;
+}
+
+notebook .left tab {
+    margin-left: 2px;
+    margin-right: -1px;
+}
+notebook .left tab:checked {
+    margin-left: 0;
+    border-left: 2pt solid @selected_bg_color;
+    border-right: 0;
+}
+
+notebook .right tab {
+    margin-right: 2pt;
+    margin-left: -1pt;
+}
+notebook .right tab:checked {
+    margin-right: 0;
+    border-right: 2pt solid @selected_bg_color;
+    border-left: 0;
+}

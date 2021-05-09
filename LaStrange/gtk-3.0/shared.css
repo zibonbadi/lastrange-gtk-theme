@@ -1,0 +1,86 @@
+* {
+    border-color: @border_color;
+    border-style: solid;
+
+    -GtkTreeView-expander-size: 11;
+}
+
+*:hover, *:focus {
+    -gtk-icon-effect: highlight;
+}
+
+selection,
+*:selected:selected,
+*:selected:focus {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+.rubberband{
+	color:	@selected_fg_color;
+	background-color:	@selected_bg_color;
+}
+/* !important seems to be broken, so I use this hack to push specificity */
+*:disabled:disabled {
+    opacity: 0.4;
+    background: repeating-linear-gradient(-45deg, transparent,transparent 5px, @disabled_bg 5px, @disabled_bg 10px);
+    /*
+    color: mix(@fg_color, @bg_color, 0.4);
+    */
+    -gtk-icon-effect: dim;
+}
+.background {
+    background: @bg_color;
+    color: @fg_color;
+}
+
+.view,
+.cell {
+    background: @base_color;
+    color: @text_color;
+}
+
+entry {
+    padding: 3pt;
+    border-bottom: 2pt dotted @border_color;
+    background-color: @base_color;
+    color: @text_color;
+}
+entry:disabled {
+    background: shade(@base_color, 0.94);
+}
+
+link {
+    color: @focus_color;
+    text-decoration: underline;
+}
+
+slider:focus,
+switch:focus slider,
+spinbutton:focus,
+notebook:focus tab:checked,
+radio:focus,
+check:focus,
+entry:focus,
+button:focus {
+    border-color: @focus_color;
+}
+
+@import url("widgets/app-notification.css");
+@import url("widgets/arrow.css");
+@import url("widgets/button.css");
+@import url("widgets/calendar.css");
+@import url("widgets/checkbox.css");
+@import url("widgets/frame.css");
+@import url("widgets/headerbar.css");
+@import url("widgets/list.css");
+@import url("widgets/menu.css");
+@import url("widgets/notebook.css");
+@import url("widgets/pane-separator.css");
+@import url("widgets/popover.css");
+@import url("widgets/progress_bar.css");
+@import url("widgets/scale.css");
+@import url("widgets/scrollbar.css");
+@import url("widgets/spinner.css");
+@import url("widgets/tooltip.css");
+@import url("widgets/treeview.css");
+@import url("colors-public.css");

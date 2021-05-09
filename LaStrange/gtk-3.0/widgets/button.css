@@ -1,0 +1,193 @@
+button,
+switch slider {
+    /*
+    min-width: 20px;
+    min-height: 20px;
+    */
+    border-radius: 5px;
+    padding: 0.5em;
+    border-color: @selected_bg_color;
+    border-width: 1pt;
+    border-bottom-width: 3pt;
+    margin-top: 0pt;
+    background: @button_bg_color;
+    color: @button_fg_color;
+}
+
+button.flat {
+    border-bottom-width: 1pt;
+}
+
+button:hover,
+button:focus,
+switch:hover slider,
+switch:focus slider {
+    background: mix(@button_bg_color, @focus_color, 0.6);
+    color: @button_fg_color;
+}
+
+button.flat:active,
+button.flat:checked
+button:active,
+button:checked {
+    border-color: @focus_color;
+}
+button:active,
+button:checked {
+    border-bottom-width: 1pt;
+    margin-top: 2pt;
+}
+
+button:disabled,
+switch:disabled slider {
+   opacity:	0.4;
+   background: @disabled_bg;
+   border-bottom-width: 1pt;
+   margin-top: 2pt;
+   border-color: @border_color;
+}
+
+button.circular {
+    border-radius: 100em;
+}
+
+button.link {
+    color: @focus_color;
+}
+button.link:hover,
+button.link:focus {
+    color: mix(@focus_color, @fg_color, 0.2);
+}
+button.link:active {
+    color: mix(@focus_color, @fg_color, 0.5);
+}
+button.link > label {
+    text-decoration: underline;
+}
+
+header button:first-child{
+	border-bottom-left-radius: 5px;
+}
+header button:last-child{
+	border-bottom-right-radius: 5px;
+}
+headerbar button.radio:first-child, button.path-bar-button:first-child{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+}
+headerbar button.radio:last-child, button.path-bar-button:last-child{
+        border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+        border-right-width: 1pt;
+}
+
+.linked > button,
+.linked > entry,
+.linked.horizontal > combobox button.combo,
+.linked.vertical > combobox button.combo {
+    border-radius: 0;
+}
+
+.linked.horizontal > button:first-child,
+.linked.horizontal > entry:first-child,
+.linked.horizontal > combobox:first-child button.combo {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.linked.horizontal > button:last-child,
+.linked.horizontal > entry:last-child,
+.linked.horizontal > combobox:last-child button.combo {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.linked.horizontal > button,
+.linked.horizontal > entry {
+    border-right-width: 0;
+}
+.linked.horizontal > :focus + button,
+.linked.horizontal > :focus + entry {
+    border-left: 0;
+}
+
+.linked.vertical > button:first-child,
+.linked.vertical > entry:first-child,
+.linked.vertical > combobox:first-child button.combo {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.linked.vertical > button:last-child,
+.linked.vertical > entry:last-child,
+.linked.vertical > combobox:last-child button.combo {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.linked.vertical > button,
+.linked.vertical > entry {
+    border-bottom-width: 0;
+}
+.linked.vertical > :focus + button,
+.linked.vertical > :focus + entry {
+    border-top: 0;
+}
+
+.linked > button:last-child,
+.linked > entry:last-child,
+.linked > button:focus,
+.linked > entry:focus {
+    border-right-width: 1pt;
+}
+
+spinbutton {
+    border-width: 0;
+}
+spinbutton entry {
+    border-width: 0;
+    border-bottom: 2pt dotted @border_color;
+    padding: 0.5em 1em;
+}
+spinbutton button {
+    /*
+    border-radius: 0;
+    */
+}
+spinbutton.horizontal button {
+    /*
+    border-width: 0 0 0 1pt;
+    */
+}
+spinbutton.vertical button.up {
+    /*
+    border-width: 0 0 1pt;
+    */
+}
+spinbutton.vertical button.down {
+    /*
+    border-width: 1pt 0 0;
+    */
+}
+spinbutton button:focus {
+    border-color: @border_color;
+}
+
+combobox button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-width: 3pt;
+    margin-bottom: -2pt;
+}
+
+switch {
+    border-width: 1pt;
+    font-weight: bold;
+    border-radius: 3pt;
+}
+
+switch:checked {
+    background: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+switch slider {
+    margin: -1pt;
+    padding: 0;
+}

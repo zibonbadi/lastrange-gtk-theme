@@ -1,48 +1,30 @@
-@define-color bg_normal #2f2f2f;
-@define-color bg_normal_transparent rgba(16, 16, 16, 0.5);
-@define-color bg_button mix(#222, #d9d9d9, 0.15);
-@define-color bg_titlebar_accent mix( #D9D9D9, #22AA99, 0.75);
-@define-color bg_titlebutton mix( #D9D9D9, #22aa99, 0.15);
-@define-color bg_titlebar_backdrop #222;
-@define-color bg_active #D9D9D9;
-@define-color bg_selected #22AA99;
-@define-color bg_selected_transparent rgba(0x22, 0xAA, 0x99, 0.25);
-@define-color bg_prelight alpha(#d9d9d9, 0.25);
-@define-color bg_insensitive #D9D9D9;
-@define-color bg_insensitive_transparent rgba(0xD9, 0xD9, 0xD9, 0.3);
-@define-color bg_overshoot rgba(0x22, 0xAA, 0x99, 0.5);
+/* default color scheme */
+@define-color bg_color_secondary #383838;
+@define-color bg_color #2f2f2f;
+@define-color fg_color #d9d9d9;
+@define-color base_color #2f2f2f;
+@define-color border_color #555;
 
-@define-color fg_normal #D9D9D9;
-@define-color fg_button #D9D9D9;
-@define-color fg_titlebutton #D9D9D9;
-@define-color fg_titlebar_backdrop #22AA99;
-@define-color fg_active #22AA99;
-@define-color fg_selected #D9D9D9;
-@define-color fg_prelight #222;
-@define-color fg_insensitive #222;
+@define-color headerbar_focus_bg alpha(#D9D9D9, 0.25);
+@define-color headerbar_fg #d9d9d9;
+@define-color disabled_bg alpha(@fg_color, 0.2);
 
-@define-color border_normal #1f1f1f;
-@define-color border_highlight #2246aa;
-@define-color border_interactive #22AA99;
-@define-color border_destructive #aa2222;
+@define-color selected_bg_color #22aa99;
+@define-color selected_fg_color #d9d9d9;
 
-@define-color button_close	#cc3333;
-@define-color button_minimize	#222;
-@define-color button_maximize	#9a19a6;
-@define-color button_menu	#179917;
+@define-color text_color @fg_color;
+@define-color focus_bg @selected_bg_color;
+@define-color focus_fg @fg_color;
+@define-color focus_color @selected_bg_color;
+@define-color tooltip_bg_color @base_color;
+@define-color tooltip_fg_color @text_color;
+@define-color button_bg_color @base_color;
+@define-color button_fg_color @text_color;
 
-@define-color notify_bg	#D9D9D9;
-@define-color notify_fg	#222;
-@define-color notify_border	#222;
-@define-color notify_button_bg	#D9D9D9;
-@define-color notify_button_fg	#222;
-@define-color notify_button_border	#22AA99;
-@define-color notify_progress	#22AA99;
+@define-color titlebar_close	#cc3333;
+@define-color titlebar_minimize	#cca700;
+@define-color titlebar_maximize	#9a19a6;
+@define-color titlebar_menu	#179917;
 
-@define-color shadow_titlebar rgba(0x00,0x00,0x00,0.5);
-@define-color shadow_popover rgba(0x22,0xaa,0x99,0.7);
+@import url("shared.css");
 
-@import url('lastrange-design.css');
-@import url('lastrange-xfce.css');
-@import url('lastrange-browser.css');
-@import url('lastrange-login.css');

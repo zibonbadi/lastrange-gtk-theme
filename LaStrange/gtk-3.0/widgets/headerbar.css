@@ -1,0 +1,73 @@
+.titlebar:not(:backdrop),
+headerbar:not(:backdrop) {
+    background-color: @focus_bg;
+    background-image: repeating-linear-gradient( transparent, transparent, @headerbar_focus_bg 3px, @headerbar_focus_bg 6px);
+    color: @focus_fg;
+    margin-bottom: -1pt;
+    border-bottom: 2pt solid @border_color;
+}
+.titlebar:not(:backdrop) .title,
+headerbar:not(:backdrop) .title{
+   border: 1pt solid @focus_fg;
+   background-color: @focus_color;
+   padding-left : 0.5em;
+   padding-right : 0.5em;
+   padding-top : 0.2em;
+   padding-bottom : 0.3em;
+}
+
+headerbar, .titlebar {
+    background: @bg_color;
+    color: @headerbar_fg;
+    padding: 0.5em;
+    border-bottom: 1pt solid @border_color;
+    /*
+    box-shadow: 0 0 0.5em alpha(#000, 0.5);
+    */
+}
+
+searchbar {
+    border-bottom-width: 1px;
+}
+
+decoration {
+    border-width: 1px;
+}
+
+headerbar button{
+   color:	@text_color;
+   background-color:	@bg_color;
+   border-color:	@border_color;
+}
+headerbar button:checked{
+   color:	@focus_color;
+}
+headerbar:backdrop button{
+    border-bottom-width: 1pt;
+    margin-top: 2pt;
+ }
+
+.titlebutton{
+    border-radius: 0px;
+}
+
+.titlebutton:not(:backdrop).close,
+.titlebutton:backdrop.close:hover{
+   color:	@titlebar_close;
+   border-color:	@titlebar_close;
+}
+.titlebutton:not(:backdrop).minimize,
+.titlebutton:backdrop.minimize:hover{
+   color:	@titlebar_minimize;
+   border-color:	@titlebar_minimize;
+}
+.titlebutton:not(:backdrop).maximize,
+.titlebutton:backdrop.maximize:hover{
+   color:	@titlebar_maximize;
+   border-color:	@titlebar_maximize;
+}
+.titlebutton:not(:backdrop).menu,
+.titlebutton:backdrop.menu:hover {
+   color:	@titlebar_menu;	
+   border-color:	@titlebar_menu;	
+}
