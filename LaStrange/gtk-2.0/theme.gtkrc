@@ -1,0 +1,92 @@
+style "default"
+{
+    GtkButton::default_border         = {0, 0, 0, 0}
+    GtkButton::default_outside_border = {0, 0, 0, 0}
+    GtkButton::child_displacement_x   = 0
+    GtkButton::child_displacement_y   = 0
+    GtkButton::default_spacing        = 0
+    GtkButton::focus-line-width       = 0
+    GtkButton::focus-padding          = 0
+    GtkCheckButton::indicator_size    = 15
+    GtkRadioButton::indicator_size    = 15
+    GtkMenuItem::selected_shadow_type = out
+    GtkPaned::handle_full_size        = 1
+    GtkRange::slider_width            = 15
+    GtkRange::stepper_size            = 15
+    GtkRange::trough_border           = 0
+    GtkScrollbar::min_slider_length   = 10
+    GtkWidget::interior_focus         = 1
+
+    xthickness = 1
+    ythickness = 1
+
+    fg[ACTIVE]        = @selected_fg_color
+    fg[INSENSITIVE]   = @insensitive_fg_color
+    fg[NORMAL]        = @fg_color
+    fg[PRELIGHT]      = @selected_fg_color
+    fg[SELECTED]      = @selected_fg_color
+
+    bg[ACTIVE]        = @selected_bg_color
+    bg[INSENSITIVE]   = @insensitive_bg_color
+    bg[NORMAL]        = @bg_color
+    bg[PRELIGHT]      = @selected_bg_color
+    bg[SELECTED]      = @selected_bg_color
+
+    base[ACTIVE]      = @selected_bg_color
+    base[INSENSITIVE] = @insensitive_base_color
+    base[NORMAL]      = @base_color
+    base[PRELIGHT]    = @selected_bg_color
+    base[SELECTED]    = @selected_bg_color
+
+    text[ACTIVE]      = @selected_fg_color
+    text[INSENSITIVE] = @insensitive_text_color
+    text[NORMAL]      = @text_color
+    text[PRELIGHT]    = @text_color
+    text[SELECTED]    = @selected_fg_color
+
+    engine "xfce"
+    {
+	smooth_edge = false
+    }
+}
+
+widget_class "*"          style "default"
+
+style "thin" = "default"
+{
+    xthickness = 0
+    ythickness = 0
+}
+
+widget_class "*Progress"  style "thin" 
+class "*Progress"         style "thin" 
+widget_class "*MenuItem*" style "thin" 
+class "*MenuItem*"        style "thin" 
+
+# This is for ROX-Filer
+# 
+style "rox" = "default"
+{
+  bg[NORMAL] = @bg_color
+  bg[ACTIVE] = @active_bg_color
+}
+widget_class "*Collection" style "rox"
+
+
+# This is for the window borders (xfwm4 & metacity)
+# 
+style "titlebar" = "default"
+{
+    bg[SELECTED]      = @active_bg_color
+    fg[SELECTED]      = @active_fg_color
+    bg[INSENSITIVE]   = @inactive_bg_color
+    base[INSENSITIVE]   = @inactive_bg_color
+    fg[INSENSITIVE]   = @active_fg_color
+    text[INSENSITIVE]   = @active_fg_color
+    bg[NORMAL]      = @active_bg_color
+    fg[NORMAL]      = @active_fg_color
+}
+
+widget "xfwm"	          style "titlebar"
+class "MetaFrames"        style "titlebar"
+widget_class "MetaFrames" style "titlebar"
